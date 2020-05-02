@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: inventories
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contexual_creation: true
